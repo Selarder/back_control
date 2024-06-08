@@ -14,7 +14,8 @@ export default new Vuex.Store({
     // ...
     state(){
         return{
-            isCollapse:true
+            isCollapse:true,
+            currentMenu :null
         }
     },
     mutations:{
@@ -22,5 +23,8 @@ export default new Vuex.Store({
             state.isCollapse = !state.isCollapse
 
         }
+        // selectMenu(state,value){
+        //     value.name=='home'?(state.currentMenu=null):(state.currentMenu = value)
+        // }
     }
 })

@@ -39,9 +39,11 @@ import { default } from '../views/main.vue';
 
 <script>
 import {useRouter} from 'vue-router'
+import { useStore } from 'vuex';
 export default {
   //二级菜单的数据
   setup() {
+    const store = useStore
     const list =[
       {
         path:"/user",
@@ -85,6 +87,7 @@ export default {
       name:item.name,
 
     })
+    store.commit("selectMenu",item)
 
   }
     return{

@@ -5,8 +5,7 @@
            <el-button siez="small" plain @click="handleisCollapse()">
                 <el-icon :size="20"><Menu /></el-icon>
            </el-button>
-           <h3 style="color:#fff">首页</h3>
-
+        <h3>首页</h3>
            <el-button siez="small">
             <el-icon :size="20"><Menu /></el-icon>
        </el-button>
@@ -31,10 +30,11 @@
     </el-header>
 </template>
 <script>
-// import {useStore} from 'vuex'
+import { computed } from 'vue';
+import {useStore} from 'vuex'
 
 export default {
-  setup() {
+    setup() {
   },
   methods: {
     handleisCollapse() {
