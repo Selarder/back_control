@@ -46,20 +46,21 @@ export default defineComponent({
                 width:320
             },  
         ])
-        onMounted(()=>{
-            getUserData
+//         onMounted(()=>{
+//             getUserData
 
-        })
-        const getUserData = async()=>{
-            await axios.get("../../api/mockData/user.js").then((res)=>{
-            if(res.data.code==200){
-                list.value=res.lis;
-            }
-        })
-        return{
-            list,
-        }
-    }
+//         })
+//         // const getUserData = async()=>{
+//         //     await axios.get("../../api/mockData/user.js").then((res)=>{
+//         //     if(res.data.code==200){
+//         //         list.value=res.lis;
+//         //     }
+//         // })
+//         return{
+//             list,
+//         }
+//     }
 }
 })
+// }),
 </script>
